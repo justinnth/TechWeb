@@ -1,0 +1,38 @@
+#tdm {
+	/* float: right; */
+	display: none;
+  	margin: 0;
+	padding: 10px;
+}
+ 
+#tdm strong {
+	/* le bloc titre 'table des matières' */
+	display: block;
+	cursor: pointer;
+}
+ 
+#tdm ul{ list-style-type : none ;}
+ 
+#tdm li.h1 {
+  margin-left: 0;
+}
+ 
+#tdm li.h2 {
+  margin-left: 15px;
+}
+ 
+#tdm li.h3 {
+  margin-left: 30px;
+}
+ 
+#tdm li.h4 {
+  margin-left: 45px;
+}
+ 
+#tdm li.h5 {
+  margin-left: 60px;
+}
+ 
+#tdm li.h6 {
+  margin-left: 75px;
+}

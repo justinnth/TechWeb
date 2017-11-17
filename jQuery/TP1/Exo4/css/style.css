@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.discrete{
+    font-size: 30px;
+}
+
+.voyante{
+    font-size: 80px;
+    color: red;
+}
+
+.intermediaire{
+    font-size: 50px;
+    color: yellow;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP2 - jQuery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <!-- les polices -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="jquery-fatNav/dist/jquery.fatNav.min.css">
+    <link rel="stylesheet" href="fullPage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="unitegallery/dist/css/unite-gallery.css">
+    <link rel="stylesheet" href="unitegallery/dist/themes/tiles/ug-theme-tiles.js">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        #map {
+            width: 95%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+<div class="fat-nav">
+    <div class="fat-nav__wrapper">
+        <ul>
+            <li><a href="#1">Article 1</a></li>
+            <li><a href="#2">Galerie d'images</a></li>
+            <li><a href="#3">Article 3</a></li>
+            <li><a href="#4">Article 4</a></li>
+        </ul>
+    </div>
+</div>
+
+<main id="fullpage">
+    <article class="section">
+        <h2>Green products</h2>
+        <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+            <g>
+                <g>
+                    <g>
+                        <text transform="matrix(1 0 0 1 225.6494 478.6875)" fill="#323534" font-family="'BebasNeue'" font-size="52.528">GREEN</text>
+                    </g>
+                    <text transform="matrix(1 0 0 1 231.5229 490.793)" fill="#323534" font-family="'OpenSans-Bold'" font-size="10.6673" letter-spacing="3">products</text>
+                </g>
+
+                <g  stroke="#000" stroke-width="2" fill="none">
+                    <path  d="M208.584,459.597c-5.347-4.521-6.777-10.297-6.113-17.095 c2.912-29.734,55.334-53.766,109.591-50.262c-59.151-6.861-107.979,18.774-113.052,49.586c-1.253,7.615,0.966,15.533,7.077,20.496 L208.584,459.597"/>
+                    <path d="M341.594,393.591c-40.395,8.618-68.765,46.491-101.196,10.957 c44.428,15.472,58.066-11.16,92.563-13.77c-19.409-19.646-59.53-29.064-82.973-2.774c11.952-3.695,32.188-12.795,68.894,1.306 c-37.155-6.899-64.976,2.111-83.34,11.648C249.147,348.706,304.543,348.055,341.594,393.591"/>
+                </g>
+            </g>
+        </svg>
+    </article>
+
+    <article class="section">
+        <h2>Galerie d'images</h2>
+        <div id="gallery" style="display:none;">
+            <img alt="Image 1 Title" src="unitegallery/package/images/thumbs/tile1.jpg" data-image="unitegallery/package/images/big/tile1.jpg" data-description="Image 1 Description">
+            <img alt="Image 2 Title" src="unitegallery/package/images/thumbs/tile2.jpg" data-image="unitegallery/package/images/big/tile2.jpg" data-description="Image 2 Description">
+            <img alt="Image 3 Title" src="unitegallery/package/images/thumbs/tile3.jpg" data-image="unitegallery/package/images/big/tile3.jpg" data-description="Image 3 Description">
+            <img alt="Image 4 Title" src="unitegallery/package/images/thumbs/tile4.jpg" data-image="unitegallery/package/images/big/tile4.jpg" data-description="Image 4 Description">
+            <img alt="Image 5 Title" src="unitegallery/package/images/thumbs/tile5.jpg" data-image="unitegallery/package/images/big/tile5.jpg" data-description="Image 5 Description">
+            <img alt="Image 6 Title" src="unitegallery/package/images/thumbs/tile6.jpg" data-image="unitegallery/package/images/big/tile6.jpg" data-description="Image 6 Description">
+            <img alt="Image 7 Title" src="unitegallery/package/images/thumbs/tile7.jpg" data-image="unitegallery/package/images/big/tile7.jpg" data-description="Image 7 Description">
+            <img alt="Image 8 Title" src="unitegallery/package/images/thumbs/tile8.jpg" data-image="unitegallery/package/images/big/tile8.jpg" data-description="Image 8 Description">
+            <img alt="Image 9 Title" src="unitegallery/package/images/thumbs/tile9.jpg" data-image="unitegallery/package/images/big/tile9.jpg" data-description="Image 9 Description">
+            <img alt="Image 10 Title" src="unitegallery/package/images/thumbs/tile10.jpg" data-image="unitegallery/package/images/big/tile10.jpg" data-description="Image 10 Description">
+        </div>
+    </article>
+
+    <article class="section">
+        <h2>Google Maps</h2>
+        <div id="map"></div>
+    </article>
+
+    <article class="section">
+        <h2>article 4</h2>
+    </article>
+
+    <article class="section">
+        <h2>article 5</h2>
+    </article>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="jquery-fatNav/dist/jquery.fatNav.min.js"></script>
+<script src="fullPage.js/dist/jquery.fullpage.min.js"></script>
+<script src="unitegallery/dist/js/unitegallery.min.js"></script>
+<script src="unitegallery/dist/themes/tiles/ug-theme-tiles.js"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyDD5-kYvExdOTmvEabdGREFKs3r5ERP-Wg"></script>
+<script src="gmaps/gmaps.min.js"></script>
+<script src="jquery-drawsvg/src/jquery.drawsvg.js"></script>
+<script src="js/comportement.js"></script>
+</body>
+</html>

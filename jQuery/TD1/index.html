@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Jquery</title>
+ 
+  <link rel="StyleSheet" href="css/styles.css" type="text/css" media="screen"/> 
+  
+   
+    
+ 
+  </head>
+  <body>
+  <h1>Exercices jQuery</h1>
+  <p>Voici une série d'exercices d'initiation à JavaScript/jQuery.</p>
+  <p>Chaque exercice doit traiter des éléments html de cette page web.</p>
+  <p>Vous devrez créer un fichier javascript nommé comportement que vous lierez à cette page.</p>
+  <p>Le programme principal fera appel au sous-programme <em>exercice1_1</em> qui résoudra le problème du premier exercice ...</p>
+  <div id="tdm"></div>
+  <h2>1. Sélection d'éléments de la page web et utilisation de méthodes</h1>
+  <p>Vous devrez savoir : </p> 
+  <ul id="liste1">
+    <li>sélectionner un élément html ou un ensemble d'éléments à l'aide du sélecteur <em>$</em>. Par exemple <code>$("ul#menu1 a")</code> permet de sélectionner tous les liens de la liste dont l'id est <em>menu1</em>.</li>
+    <li>Appliquer une méthode à un ensemble d'éléments. Par exemple <code>$("ul#menu1 a").addClass("relief")</code> ajoute la classe <em>relief</em> à tous les liens de la liste dont l'id est <em>menu1</em>. Une méthode, est un sous-programme applicable à un objet. Dans notre exemple, la méthode <em>addClass</em> est appliquée à l'objet <em>$("ul#menu1 a")</em>, qui regroupe un ensemble d'éléments de la page web.</li>
+    </ul>
+    <h3>Exercice 1</h3>
+    <p id="select1">Appliquez <span>la classe <em>relief</em></span> à tous les <span>span</span> de ce <span>paragraphe</span>.</p>
+    
+    <h3>Exercice 2</h3>
+    <p id="select2">Faites disparaître <span class="option">lentement</span> <span class="option">(avec la méthode  <em>hide</em> ou la méthode <em>fadeOut</em>)</span> les éléments de ce paragraphe situés dans des balises <em>span</em> de la classe <em>option</em>.</p>
+    
+  
+  <h2>2. Gestion d'évènement et sélections</h2> 
+  <p>Vous devez savoir :</p>
+  <ul>
+  <li>Relier un élément, un évènement le concernant et un gestionnaire d'évènement chargé de traiter l'évènement en question. Par exemple <code>$("a#m").click(agrandir);</code> indique que lorsqu'on clique sur le lien dont l'id est <em>m</em>, il faut exécuter le sous-programme <em>agrandir</em>.</li>
+  <li>Créer un sous-programme. Par exemple <code>function agrandir(){// écrire ici les instructions de ce sous-prog}.</code> </li>
+  <li>Dans un sous-programme de gestion d'un évènement, faire référence à l'élément qui a déclenché l'évènement. Par exemple <code>$(this).addClass("grand") ;</code> applique la classe "grand" à l'élément qui a déclenché l'exécution de cette instruction (l'élément sur lequel on a cliqué, par exemple).</li>
+  <li>Masquer ou afficher un élément avec les méthodes <em>hide</em> et <em>show</em>, ou avec les effets <em>fadeOut</em> et <em>fadeIn</em>.</li> 
+  </ul>
+  <h3>Exercice 1 : masquage d'un élément</h3>
+  <p>Lorsqu'on clique sur la liste, masquer son premier élément, réafficher l'élément lorsqu'on clique sur<span class="control" id="Reaff1">tout réafficher</span>.</p>
+  <ul id="ex1_1"><li>A</li><li>B</li><li>C</li><li>D</li></ul>
+  
+  <h3>Exercice 2 : masquage de l'élément récepteur de l'évènement</h3>
+  <p>Lorsqu'on clique sur un élément de la liste, masquer cet élément, réafficher tous les éléments lorsqu'on clique sur<span class="control" id="Reaff2">tout réafficher</span>.</p>
+  <ul id="ex1_2"><li>A</li><li>B</li><li>C</li><li>D</li></ul>
+  
+  <h3>Exercice 3 : masquage d'un ensemble d'éléments</h3>
+  <p>Lorsqu'on clique sur un élément, masquer tous ceux qui appartiennent à la même classe, réafficher tous les éléments lorsqu'on clique sur<span class="control" id="Reaff3">tout réafficher</span>.</p>
+  <ul id="ex1_3"><li class="texte">A</li><li class="texte">B</li><li class="nombre">56</li><li class="nombre">1024</li><li class="texte">C</li><li class="nombre">243</li></ul>
+  
+  <h3>Exercice 4 : ajout d'une classe à d'un ensemble d'éléments</h3>
+  <p>Lorsqu'on clique sur un élément, ajouter la classe "relief" à tous ceux qui appartiennent à la même classe, réafficher normalement tous les éléments lorsqu'on clique sur<span class="control" id="Reaff4">tout réafficher</span>.</p>
+  <ul id="ex1_4"><li class="texte">A</li><li class="texte">B</li><li class="nombre">56</li><li class="nombre">1024</li><li class="texte">C</li><li class="nombre">243</li></ul>
+  
+  <h2>3. Gestion d'évènement et manipulation du DOM</h2> 
+  <p>Vous devez savoir :</p>
+  <ul>
+  <li>Sélectionner les éléments frères d'un élément particulier en utilisant la méthode <em>siblings</em>. Ex : <code>$("ul#menu1 a#lien1").siblings().addClass("discret") ;</code> applique la classe "discret" à tous les liens frères du lien dont l'id est <em>lien1</em>. On peut penser que tous les liens du menu1 (sauf le lien1) vont recevoir la classe "discret".</li>
+  <li>Atteindre un élément du DOM en utilisant les méthodes <em>children</em>, <em>parent</em>, <em>next</em>, <em>prev</em> et <em>get</em>. Ex : <code>$("ul#menu1").children().get(0) </code>désigne le premier enfant (probablement un <em>li</em>) de la liste dont l'id est <em>menu1</em>.</li>
+  <li>Détacher un élément du DOM pour l'insérer dans une autre partie du document. Ex : <code>var monP=$("#liste1").children().first().detach() ; </code>détache le premier élément fils du div <em>liste1</em> et le stocke dans la variable <em>monP</em>.</li>
+  <li>Ajouter un élément à l'intérieur d'un autre avec <em>append</em> ou  <em>appendTo</em> (à la fin) et <em>prepend</em> ou  <em>prependTo</em> (au début). Ex : <code>$("#menu1").children().first().appendTo("#menu2") ; </code>rajoute le premier élément du menu1 à la fin du menu2.</li>
+  </ul>
+  <h3>Exercice 1 : déplacement d'un élément</h3>
+  <p>Cliquer sur la liste provoque la modification suivante : le premier élément est déplacé en dernière position.</p>
+  <ul id="ulEx1">
+    <li>Element 1</li><li>Element 2</li><li>Element 3</li><li>Element 4</li>
+  </ul>
+  
+   <h3>Exercice 2 : déplacement de l'élément ciblé, parmi des frères</h3>
+  <p>Cliquer sur un élément de la liste provoque la modification suivante : l'élément est déplacé en dernière position.</p>
+  <ul id="ulEx2">
+    <li>Element 1</li><li>Element 2</li><li>Element 3</li><li>Element 4</li>
+  </ul>
+  
+  <h3>Exercice 3 : déplacement de l'élément ciblé, parmi des frères</h3>
+  <p>Cliquer sur un élément de la liste provoque la modification suivante : l'élément est déplacé d'un cran vers le haut de la liste.</p>
+  <ol id="olEx3">
+    <li>A</li><li>B</li><li>C</li><li>D</li>
+  </ol>
+  
+    <h3>Exercice 4 : insertion d'éléments de contrôles</h3>
+  <p>Ajouter un ↑ et un ↓ après chaque élément. ↑ aura pour classes <em>control</em> et <em>monte</em> ; ↓ aura pour classes <em>control</em> et <em>descend</em>. Cliquer sur ↑ déplace l'élément d'un cran vers le haut de la liste, cliquer sur ↓ le déplace vers le bas.</p>
+  <ol id="olEx4">
+    <li>A</li><li>B</li><li>C</li><li>D</li>
+  </ol>
+  <p><strong>Bonus </strong>: Il est inutile d'avoir un ↑ pour déplacer le premier élément ...</p>
+  
+  <h3>Exercice 5 : capture d'évènements</h3>
+  <p>Cliquer sur un élément de la liste non numérotée provoque la modification suivante : l'élément est déplacé en dernière position de la liste numérotée.</p>
+  <p>Dans cette liste numérotée, cliquer sur un élément le met en relief (utilisez la classe "relief"), ôte le relief des autres éléments et fait apparaitre un 'x' à la droite de l'élément. Le 'x' aura pour classes <em>control</em> et <em>supprime</em>, cliquer sur le 'x' supprime l'élément.</p>
+  <p><em>Remarque 1 </em>: lorsque un élément est déplacé, il continue à avoir son gestionnaire d'évènement, il peut être utile de le supprimer</p>
+  <p><em>Remarque 2 </em>: lorsque un élément est inséré dynamiquement (par programme), il ne possède pas les gestionnaires d'évènement donnés à ses frères statiques. Il faut donc lui associer dynamiquement un gestionnaire d'évènement.</p>
+  <ul id="ulEx2_5">
+    <li>David</li><li>Franck</li><li>Gaspar</li><li>John</li>
+  </ul>
+  
+  <ol id="olEx2_5">
+    
+  </ol>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js" type="text/javascript"></script>
+   
+   <script src="js/comportement.js" type="text/javascript"></script>
+
+
+  </body>
+</html>
