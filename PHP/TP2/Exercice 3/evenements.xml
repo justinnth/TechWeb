@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<evenements>
+    <event>
+        <nom>TP WEB 2</nom>
+        <date>2013-10-18</date>
+        <heure>9:35</heure>
+        <info>TP de web sur la cr&#xE9;ation de formulaire</info>
+    </event>
+    <event>
+        <nom>Activit&#xE9; de l'apr&#xE8;s midi</nom>
+        <date>2013-10-18</date>
+        <heure>14:00</heure>
+        <info>Selon le temps</info>
+    </event>
+<event><nom>Ap&#xE9;ro</nom><date>2013-10-19</date><heure>19:00</heure><info>C'est le week-end</info></event><event><nom>Ap&#xE9;ro</nom><date>2013-10-19</date><heure>19:00</heure><info>C'est le week-end</info></event></evenements>

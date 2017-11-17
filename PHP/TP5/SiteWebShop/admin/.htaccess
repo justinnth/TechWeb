@@ -1,0 +1,4 @@
+AuthName "PHRASE D'ACCUEIL"
+AuthType Basic
+AuthUserFile "/Users/justinnorth/Documents/Cours/S3/Technologies du web 2/TP5/SiteWebShop/admin/.htpasswd"
+Require valid-user

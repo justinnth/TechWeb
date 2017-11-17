@@ -1,0 +1,110 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+ul{
+	list-style:none;
+	width: 600px;
+	background-color:rgb(180,181,181);
+	overflow:hidden;
+	
+}
+
+
+#wrapper{
+	margin:40px auto;
+	width:600px;
+}
+
+
+
+header{
+	background-color: #00ffa8;
+	height:50px;
+	line-height:50px;
+}
+
+header h1{
+	color:white;
+	float:left;
+	width:50%;
+	
+}
+
+header form{
+	width:45%;
+	float:left;
+	background-color:white;
+	color:rgb(180,181,181);	
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+}
+
+header form p{
+	padding-left:20px;
+}
+
+header form input[text]{
+	width:50%;
+}
+
+ul li {
+	width:200px;
+	float:left;
+	margin-bottom:10px;
+	
+	
+}
+
+article{
+	background-color: white;
+	width:177px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+article h2{
+	font-size:12px;
+	padding-left:10px;
+	font-style: italic;
+	
+}
+
+article h3{
+	font-size:10px;
+	color:rgb(180,181,181);	
+	padding-left:10px;
+	font-style: italic;
+}
+
+article p:last-child{
+	padding-top:10px;
+	padding-bottom: 20px;
+	
+}
+		
+article a{
+	color:white;
+	text-decoration: none;
+	display:block;
+	font-size:10px;
+	width:100px;
+	background-color:rgb(180,181,181);	
+	color:white;
+	text-transform:uppercase;
+	margin-left:10px;
+}
+
+
+footer{
+	height:30px;
+	background-color:#707070;
+}
+
+footer p{
+	text-align:right;
+	padding-right :20px;
+	font-style:italic;
+}

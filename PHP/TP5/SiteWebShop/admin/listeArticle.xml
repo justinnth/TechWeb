@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<articles>
+
+    <article>
+        <id_categorie>1</id_categorie>
+        <designation>LeProduit1</designation>
+        <prix>20</prix>
+        <tva>5</tva>
+        <description>un super produit 1</description>
+        <img_article>images/devise.png</img_article>
+    </article>
+
+    <article>
+        <id_categorie>2</id_categorie>
+        <designation>LeProduit2</designation>
+        <prix>20</prix>
+        <tva>5</tva>
+        <description>un super produit 2</description>
+        <img_article>images/devise.png</img_article>
+    </article>
+
+    <article>
+        <id_categorie>3</id_categorie>
+        <designation>LeProduit3</designation>
+        <prix>20</prix>
+        <tva>5</tva>
+        <description>un super produit 3</description>
+        <img_article>images/devise.png</img_article>
+    </article>
+
+</articles>

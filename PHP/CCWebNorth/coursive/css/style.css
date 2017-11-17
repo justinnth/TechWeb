@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    color:#8a8888;
+}
+
+a{
+    color:#8a8888;
+    text-decoration: none;
+    display: block;
+}
+
+.wrap{
+ width:960px;
+    margin: 0 auto;
+}
+
+.type{
+    padding: 10px 0;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.description{
+    background-color: #000;
+    color:#8a8888;
+    line-height: 50px;
+    margin:20px;
+
+}
+.jaune{
+    color:#ffdd0e;
+}
+
+.fondJaune{
+       background-color:#ffdd0e; 
+    color:#fff;    
+}
+
+header{
+    overflow: hidden;
+}
+
+
+header nav{
+    float:left;
+    width:180px;
+}
+
+header nav ul li{
+    float :left;
+    width:80px;
+    height:80px;
+    margin:10px 10px 10px 0;
+    text-align: center;
+    background-color:#222; 
+}
+
+main nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+header h1{
+    margin : 80px 0  0 200px; 
+}
+
+header nav ul li a{
+/*padding-top: 25px;
+    display: inline-block;*/
+    line-height: 80px;
+}
+
+header nav ul li:hover{
+    background-color:#ffdd0e; 
+}
+
+main{
+    background-color: black;
+    overflow: hidden;
+}
+
+main>h2{
+     font-size: 40px;
+    padding-top: 20px;
+    padding-left: 25px;
+    text-transform: uppercase;
+    color :#ffdd0e; 
+}
+
+main>section{
+        
+      margin :20px;
+}
+ form{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+main ul{
+    padding-bottom: 25px;
+}
+
+section ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+
+main>ul>li{
+     margin :3%;
+    background-color: #333; 
+    width:44%;
+    float:left;
+    min-height: 400px;
+        
+}
+
+main>ul>li>*{
+    /*width : 655px;
+    padding-left: 250px;
+    padding-top :10px;*/
+}
+
+main>ul>li p:nth-of-type(1){
+   /* float:left;
+    width : 60px;
+    height: 118px;
+     padding-left: 10px;
+    padding-right: 10px;
+     padding-top :20px;*/
+    text-align: center;
+    line-height: 3em;;
+    
+    
+}
+main>ul>li p:nth-of-type(2){
+   /* width:138px;
+    float:left;
+     padding-left: 0;
+    padding-top :0;*/
+    text-align: center;
+}
+
+img[src*="plus.png"]{
+    float: right;
+}
+
+
+main>p{
+    margin :20px;
+}
+
+.lesImages{
+    overflow: hidden;
+}
+
+.images img{
+    display: inline-block;
+    width:58px;
+    height:58px;
+}
+
+.lesImages .grande{
+    float:left;
+    width:50%;
+}
+
+.lesImages .images{
+    float:right;
+    width:50%;
+}
+
+
+
+.lesImages .grande img{
+     display: inline-block;
+    width:300px;
+    height:300px;
+}
+
+
+
+
