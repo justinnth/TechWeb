@@ -1,5 +1,5 @@
 <?php
 	
-	echo "<p> test réussi</p>";
+	echo "<p> test rÃ©ussi</p>";
 	
 ?>
