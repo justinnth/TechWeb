@@ -1,5 +1,11 @@
 $(document).ready(init());
 
 function init() {
-    console.log("Hello");
+    $("#cliquable").click(function(){
+        modification();
+    });
+}
+
+function modification(){
+    $("#modifiable").load("exo1.html");
 }
