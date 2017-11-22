@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+    <trackList>
+        <track>
+          <location>Sons/where_is_my_mind.mp3</location>
+          <title>where is my mind</title>
+          <creator>pixies</creator>
+          <!-- album title -->
+          <album>death to pixies</album>
+          <annotation></annotation>
+          <duration></duration>
+            <!-- album art -->
+            <image></image>
+            <!-- if this is a deep link, URL of the original web page -->
+            <info></info>
+        </track>
+        <track>
+          <location>Sons/cecilia_ann.mp3</location>
+          <title>cecilia ann.mp3</title>
+          <creator>pixies</creator></track>
+        <track>
+          <location>Sons/planet_of_sound.mp3</location>
+          <title>planet of sound</title>
+          <creator>pixies</creator>
+        </track>
+        <track>
+          <location>Sons/tame.mp3</location>
+          <title>tame</title>
+          <creator>pixies</creator>
+        </track>
+        <track>
+          <location>Sons/here_comes_your_man.mp3</location>
+          <title>here comes your man</title>
+          <creator>pixies</creator>
+        </track>
+    </trackList>
+</playlist>
+
