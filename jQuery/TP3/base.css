@@ -1,0 +1,200 @@
+/* Call additional style sheets -- @import section */
+/* End of @import */
+*                                   {  margin                        :  0;
+                                       padding                       :  0;
+                                    }
+
+body                                {  margin                        :  0;
+                                       padding                       :  0;
+                                       font                          :  0.75em/1.3em georgia,'times new roman',serif;
+                                       letter-spacing                :  0.1em;
+                                       background-color              :  rgb(168,205,203);
+                                    }
+
+.wrapper                         {  margin                        :  50px;
+                                       margin-left                   :  auto;
+                                       margin-right                  :  auto;
+                                       width                         :  800px;
+                                       border                        :  5px solid #fff;
+                                       background-color              :  rgb(224,244,244);
+                                       position                      :  relative;
+                                       
+                                 }
+
+main                         {  
+                                    /*   margin-top                    :  245px;*/
+                                       width                         :  100%;
+                                       background-color              :  rgb(224,244,244);                                       
+                                    }
+
+  
+div#Contenu_principal  ,
+div#Contenu_secondaire             {  font-family                   :  Myriad, "Myriad Roman", "Myriad Pro", "Myriad Web", "Lucida Grande", "Trebuchet MS", Helvetica, Arial, san-serif;
+                                       padding-bottom                :  20px;
+                                      background-color              :  rgb(224,244,244);
+                                       background-image              :  url('Habillage/bas-de-page.jpg');
+                                       background-position           :  bottom left;
+                                       background-repeat             :  repeat-x;
+                                       
+                                    }
+
+div#Contenu_principal               {  width                         :  468px;
+                                       border-right                  :  1px dotted silver;
+                                       padding                       :  20px;
+                                       float                         :  left;
+                                    }
+                                
+
+div#Contenu_principal p,
+div#Contenu_secondaire  p          {   word-spacing                  :  0.25em;
+                                       color                         :  #444;
+                                       text-indent                   :  5em;
+                                       margin-top                    :  1em; 
+                                    }
+                                    
+ div#Contenu_principal p            {   margin-bottom                :  0.5em; 
+                                    }
+                                                             
+div#Contenu_secondaire              {  width                         :  238px;
+                                       padding                       :  20px;
+                                       float                         :  left; 
+                                       border-left                   :  1px dotted silver;                                       
+                                    }
+                                    
+img#changer                         {
+                                        position : absolute ;
+                                        left : 450px;
+                                        cursor : pointer ;
+                                    }                                    
+                
+img#imgPhone                        {
+                                          width                       : 106px;
+                                          height                      : 181px;
+                                          float                       : right;
+                                      }
+                                      
+main h2 + p:first-letter
+                                    {  font-size                     :  160%;
+                                       color                         :  #111;
+                                    }  
+                               
+                                    
+/***************************************************************************/
+/* Header and Footer                                                       */
+/***************************************************************************/
+                                  
+
+header h1                       {  
+                                      /*margin                        :  0;
+                                      position                      :   absolute;
+                                      top                           :  0;*/
+                                      margin-left                          :  -50px;
+                                      text-indent                   : -9999px;
+                                      height                        :  240px;                                       
+                                      width                         :  850px;
+                                      background-image              :  url('Habillage/header4.jpg');
+                                      background-repeat             :  no-repeat;
+                                      
+                                    }
+
+	                              
+footer                          {  
+                                      clear                         :  both;
+                                       height                        :  40px;
+                                       width                         :  100%;                                      
+                                       background-color              :  #fff;
+                                       color                         :  #666;
+                                       text-align                    :  center;
+                                      padding-top                    :  10px;
+                                      }
+
+/***************************************************************************/
+/* Titles                                                                  */
+/***************************************************************************/
+div#Contenu_principal h1,
+div#Contenu_principal h2,
+div#Contenu_principal h3,
+div#Contenu_principal h4,
+div#Contenu_secondaire h1,
+div#Contenu_secondaire h2,
+div#Contenu_secondaire h3,
+div#Contenu_secondaire h4           {  font-size                     :  160%;
+                                       border-bottom                 :  1px dashed rgb(0,0,70);
+                                       color                         :  rgb(0,0,70);
+                                       line-height                   :  2.5em;
+                                    }
+
+div#Contenu_principal h2,
+div#Contenu_secondaire h2           {  font-size                     :  145%;
+                                    }
+
+div#Contenu_principal h3,
+div#Contenu_secondaire h3           {  font-size                     :  130%;
+                                    }
+
+div#Contenu_principal h4,
+div#Contenu_secondaire h4           {  font-size                     :  115%;
+                                    }
+
+
+/***************************************************************************/
+/* Sysmenu                                                                 */
+/***************************************************************************/
+ul#Sysmenu                       {       
+                                      margin                        :  0;
+                                      padding                       :  0;
+                                      position                      :  absolute;
+                                      top                           :  0;
+                                      right                          :0;                                        
+                                }
+
+
+ul#Sysmenu li                      {  margin                        :  0;
+                                      padding                       :  0;
+                                      display                       :  inline;
+                                      list-style-type               :  none;
+                                    }
+
+
+ul#Sysmenu a:link,
+ul#Sysmenu a:visited,
+ul#Sysmenu a:active                {  float                         :  left;
+                                      line-height                   :  14px;
+                                      font-weight                   :  bold;
+                                      text-decoration               :  none;
+                                      color                         :  rgb(40,40,40);
+                                    }
+ ul#Sysmenu a#p1,  
+ ul#Sysmenu a#p2, 
+ ul#Sysmenu a#p3,  
+ ul#Sysmenu a#p4
+                                    { margin                        :  0 10px 4px 10px; }
+ 
+           
+ ul#Sysmenu a#sitemap               { margin                        :  0 145px 4px 10px;
+      
+                                    } 
+                                   
+ul#Sysmenu a#p5                   {   margin                        :  0 10px 4px 10px; }                
+                       
+
+ ul#Sysmenu a:hover                 {  border-bottom                 :  4px solid #000;
+                                       padding-bottom                :  2px;
+                                       background                    :  transparent;
+                                       color                         :  #000;
+                                    }
+/***************************************************************************/
+/* Encadrement                                                                 */
+/***************************************************************************/                                  
+                                    
+#Highlight                          {
+                                        background-image:url('Habillage/phoneBG.jpg');
+                                        background-position:right top;
+                                        background-repeat:no-repeat;
+                                        background-color:rgb(190,210,210);
+                                        padding:10px;
+                                        border:2px solid #fff;
+                                        
+                                    }
+
+           
