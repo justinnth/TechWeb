@@ -1,8 +1,6 @@
 $(document).ready(init());
 
 function init(){
-    console.log("Salut");
-
     $("#changer").click(
         function(){
             $.ajax({
