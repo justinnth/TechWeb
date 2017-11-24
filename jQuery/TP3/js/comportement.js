@@ -17,21 +17,18 @@ function changerTelephone1(){
         function traiterAjax(data){
             var numero = data;
             $.get(
-                "nom.php",{
-                    n: numero
-                },
+                "nom.php",
+                {n: numero},
                 affichageNom    
             );
             $.get(
-                "commentaire.php",{
-                    n: numero
-                },
+                "commentaire.php",
+                {n: numero},
                 affichageComm
             );
             $.get(
-                "photo.php",{
-                    n: numero
-                },
+                "photo.php",
+                {n: numero},
                 affichagePhoto       
             );
         }
