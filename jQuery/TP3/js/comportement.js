@@ -5,34 +5,11 @@ function init(){
 }
 
 function changerTelephone2(){
-    $.getJSON(
-        "trouverUnTelephone.php",
-        traitement
-    );
+    $.getJSON("trouverUnTelephone.php",traitement);
 }
 
 function changerTelephone1(){
-    $.get(
-        "num.php",
-        function traiterAjax(data){
-            var numero = data;
-            $.get(
-                "nom.php",
-                {n: numero},
-                affichageNom    
-            );
-            $.get(
-                "commentaire.php",
-                {n: numero},
-                affichageComm
-            );
-            $.get(
-                "photo.php",
-                {n: numero},
-                affichagePhoto       
-            );
-        }
-    );
+    $.get("num.php",traiterAjax);
 }
 
 function affichageNom(data){
@@ -45,6 +22,13 @@ function affichageComm(data){
 
 function affichagePhoto(data){
     $("img#imgPhone").attr('src', 'Photos/'+data);
+}
+
+function traiterAjax(data){
+    var numero = data;
+    $.get("nom.php",{n: numero},affichageNom    );
+    $.get("commentaire.php",{n: numero},affichageComm);
+    $.get("photo.php",{n: numero},affichagePhoto);
 }
 
 function traitement(data){

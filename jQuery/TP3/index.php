@@ -1,5 +1,23 @@
 <?php
 
+include "connectionBD.php";
+session_start();
+
+$connection = connectionBD();
+
+if(isset($_COOKIE['numTel'])){
+  if(!empty($_COOKIE['numTel']))
+    $_SESSION['numTel'] = $_COOKIE['numTel'];
+}
+else
+  $_SESSION['numTel'] = 1;
+
+$sql = "SELECT * FROM telephones WHERE num = ".$_SESSION['numTel'];
+
+$result = $connection->prepare($sql);
+
+if ($result->execute()) 
+  $telephone = $result->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!doctype html>
@@ -26,16 +44,11 @@
          <main> 
           <div id="Contenu_principal">
           <img id="changer" src="Habillage/fleche-bleue.gif" alt="Changer de modèle">
-             <h1 id="modele">Le Modèle Odyssée</h1>
-             <img id="imgPhone" src="Photos/1.jpg" alt="Photo du modele" />
+             <h1 id="modele"><?= $telephone['Nom'] ?></h1>
+             <img id="imgPhone" src="Photos/<?= $telephone['Photo'] ?>" alt="Photo du modele" />
                <p id="article">
-                  Donec ultricies varius quam. Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Aliquam neque magna, varius id, tempor non, molestie ac, magna.
-                  Aliquam non mi. Mauris quam purus, imperdiet at, ullamcorper id, tincidunt sed, ligula.
-                  Ut nulla nibh, consectetuer ac, iaculis quis, adipiscing vitae, nunc. Fusce quis mauris
-                  nec erat mattis faucibus.
-                  
-               </p>
+               <?= $telephone['Commentaire'] ?>
+              </p>
 
                <h2>Title - h2</h2>
                <p>
