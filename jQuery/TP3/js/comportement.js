@@ -1,19 +1,13 @@
 $(document).ready(init());
 
 function init(){
-    $("#changer").click(function(){
-        changerTelephone2()
-    });
+    $("#changer").click(changerTelephone2);
 }
 
 function changerTelephone2(){
     $.getJSON(
         "trouverUnTelephone.php",
-        function traitement(data){
-            $("h1#modele").text(data.Nom);
-            $("p#article").text(data.Commentaire);
-            $("img#imgPhone").attr('src', 'Photos/'+data.Photo);
-        }
+        traitement
     );
 }
 
@@ -26,26 +20,38 @@ function changerTelephone1(){
                 "nom.php",{
                     n: numero
                 },
-                function affichageNom(data){
-                    $("h1#modele").text(data);
-                }
+                affichageNom    
             );
             $.get(
                 "commentaire.php",{
                     n: numero
                 },
-                function affichageComm(data){
-                    $("p#article").text(data);
-                }
+                affichageComm
             );
             $.get(
                 "photo.php",{
                     n: numero
                 },
-                function affichagePhoto(data){
-                    $("img#imgPhone").attr('src', 'Photos/'+data);
-                }
+                affichagePhoto       
             );
         }
     );
+}
+
+function affichageNom(data){
+    $("h1#modele").text(data);
+}
+
+function affichageComm(data){
+    $("p#article").text(data);
+}
+
+function affichagePhoto(data){
+    $("img#imgPhone").attr('src', 'Photos/'+data);
+}
+
+function traitement(data){
+    $("h1#modele").text(data.Nom);
+    $("p#article").text(data.Commentaire);
+    $("img#imgPhone").attr('src', 'Photos/'+data.Photo);
 }
