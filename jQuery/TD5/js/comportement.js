@@ -35,17 +35,17 @@ function envoiAjax(url, classe){
 function traitemenJardin(data){
     var ul = $("div.bordeaux ul");
 
-    $.each(data.d, function(i){
-        var li = $("<li/>").attr("data-id", data.d[i].cle).text(data.d[i].nom_espace_entretien).appendTo(ul);
+    $.each(data.d, function(i, e){
+        var li = $("<li/>").attr("data-id", e.cle).text(e.nom_espace_entretien).appendTo(ul);
         map.addMarker({
-            lat: data.d[i].y_lat,
-            lng: data.d[i].x_long,
-            title: data.d[i].nom_espace_entretien,
-            mouseover: function(e){
-                $("ul").find('[data-id='+data.d[i].cle+"]").toggleClass('rouge');
+            lat: e.y_lat,
+            lng: e.x_long,
+            title: e.nom_espace_entretien,
+            mouseover: function(evt){
+                $("ul").find('[data-id='+e.cle+"]").toggleClass('rouge');
             },
-            mouseout: function(e){
-                $("ul").find('[data-id='+data.d[i].cle+"]").toggleClass('rouge');
+            mouseout: function(evt){
+                $("ul").find('[data-id='+e.cle+"]").toggleClass('rouge');
             }
         });
     });
