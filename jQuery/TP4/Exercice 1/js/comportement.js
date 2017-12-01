@@ -1,10 +1,8 @@
 $(document).ready(init());
 
 function init(){
-    var urlParis = "https://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro&rows=159&facet=arrondissement";
+    var urlParis = "https://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro&rows=181&facet=arrondissement";
     envoiAjax(urlParis, "listeCafes").done(traitementParis);
-
-
 }
 
 function envoiAjax(url, id){
@@ -46,7 +44,7 @@ function clickLi(){
 
     var arrondissement = $(this).attr("data-arrondissement");
 
-    var url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro&rows=159&facet=arrondissement&refine.arrondissement="+arrondissement;
+    var url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro&rows=181&facet=arrondissement&refine.arrondissement="+arrondissement;
     envoiAjax(url, "autresCafes").done(traitementAutres);
 }
 

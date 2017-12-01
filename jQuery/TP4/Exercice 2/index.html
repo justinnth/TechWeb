@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>OpenData </title>
+    </head>
+<body>
+    <section id="bestBD">
+        <h2>Les 5 BD les plus prêtées</h2>
+    </section>
+
+    <form id="formulaire">
+        <fieldset>
+            <legend>Auteur</legend>
+            <p>
+                <label for="nom" >Nom de l'auteur</label>
+                <input type="text" id="nom" name="auteur"/>
+            </p>
+            <p class="submit">
+                <label>Rechercher</label>
+                <input type="button" id="submit" value="Envoi" name="send" />    
+            </p>
+        </fieldset>
+    </form>
+    
+    <section id="listeBD">
+        <h2>Les BDs de <span></span></h2>
+    </section> 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/comportement.js"></script>
+</body>
+</html>
