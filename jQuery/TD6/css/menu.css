@@ -1,0 +1,35 @@
+nav{
+    background-color: #fff;
+    color:#000;
+    
+    height:50px;
+    line-height: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+nav>ul>li{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 100px;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+}
+
+nav ul li a:link,nav ul li a:visited{
+ text-decoration: none;
+    color:#000;
+    
+}
+
+nav>ul>li>ul{
+    position: absolute;
+    margin:0;
+    padding:0;
+     line-height: 30px;
+}
+    
