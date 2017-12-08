@@ -47,6 +47,7 @@ $.fn.gestionImage = function(options){
         li.draggable({
             revert: true
         });
+        
         li.droppable({
             drop: echangeImage
         });
