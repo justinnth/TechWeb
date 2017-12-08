@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+ul{
+    list-style: none;
+    float : left;
+   
+}
+
+ul li{
+    float:left;
+    
+}
+
+ul li img{
+    display: block;
+}
+
+#poubelle{
+    clear: both; 
+    background-image: url(img/poubelle.jpg);
+    background-repeat: no-repeat;
+    width:124px;
+    height:124px;
+}
+
+#zoom{
+    border: 1px solid #000;
+   
+    float :left;
+    margin-left : 50px;
+    margin-top : 20px;
+}
