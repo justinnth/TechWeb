@@ -1,0 +1,40 @@
+.listePrenom{
+    display: inline-block;
+    width:30%;
+    margin-right: 5%;
+}
+
+
+.listePrenom li{
+     position: relative; 
+    margin-bottom: 10px;
+}
+
+.un,.deux{
+   
+    padding:3px;
+    border-radius: 50%;
+    background-color: #eee;
+    position:absolute;
+    left:120px;
+    top:0;
+}
+
+.deux{
+    left:140px;
+}
+
+
+.liste1,.liste2{
+    display: inline-block;
+    width:20%;
+    margin-right: 5%;
+    border: 1px solid #000;
+    min-height:100px;
+    vertical-align: top;
+}
+
+.important{
+    background-color: #111;
+    color:red;
+}
