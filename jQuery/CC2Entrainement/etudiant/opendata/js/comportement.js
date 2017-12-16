@@ -32,5 +32,15 @@ function traitementArbres(data){
     if (value.fields.hauteurenm < 25) {
       L.marker(value.fields.geom_x_y).addTo(map).bindPopup('<h3>'+ value.fields.espece +'</h3><p>'+ value.fields.genre +'</p><p>'+ value.fields.adresse +'</p>')
     }
+    else {
+      var pentaVertMarker = L.ExtraMarkers.icon({
+        icon: 'fa-tree',
+        markerColor: 'green',
+        shape: 'penta',
+        prefix: 'fa'
+      });
+
+      L.marker(value.fields.geom_x_y, {icon : pentaVertMarker}).addTo(map).bindPopup('<h3>'+ value.fields.espece +'</h3><p>'+ value.fields.genre +'</p><p>'+ value.fields.adresse +'</p>');
+    }
   });
 }
