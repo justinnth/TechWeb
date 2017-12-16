@@ -4,6 +4,7 @@ function init() {
   exo1();
   exo2();
   exo3();
+  exo4();
 }
 
 /**
@@ -68,4 +69,37 @@ function survolLi(e) {
 
 function viderAside(e) {
   e.data.param.empty();
+}
+
+/**
+ * Exercice 4
+ */
+function exo4() {
+  var url = "donnees/donnees.php";
+  envoiAjax(url).done(traitementAjax);
+}
+
+function envoiAjax(url){
+  return $.ajax({
+      url: url,
+      type: "post",
+      data: {
+        angou: 2016
+      },
+      dataType: "JSON"
+  }).fail(function(){
+      alert("Echec");
+  });
+}
+
+function traitementAjax(data) {
+  var section = $("section#ex4");
+  var h3 = $("<h3/>").text(data.festival + " " + data.annee).appendTo(section);
+  var tableau = $("<table/>").attr("style", "border: 1px").appendTo(section);
+  $.each(data.prix, function(key, value) {
+    var tr = $("<tr/>").appendTo(tableau);
+    var nom = $("<td/>").text(value.nom).appendTo(tr);
+    var auteur = $("<td/>").text(value.auteur).appendTo(tr);
+    var prix = $("<td/>").text(value.prix).appendTo(tr);
+  })
 }
