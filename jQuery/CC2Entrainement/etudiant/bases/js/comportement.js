@@ -3,6 +3,7 @@ $(document).ready(init());
 function init() {
   exo1();
   exo2();
+  exo3();
 }
 
 /**
@@ -46,4 +47,25 @@ function ajoutListe2(e) {
   var li = $("<li/>").text(e.data.text);
   var liste2 = $("section#ex2 ul.liste2");
   li.appendTo(liste2);
+}
+
+/**
+ * Exercice 3
+ */
+function exo3(){
+  var li = $("section#ex3 ul li");
+  var aside = $("section#ex3 aside");
+  li.each(function(){
+    $(this).mouseover({param: aside}, survolLi);
+    $(this).mouseout({param: aside}, viderAside);
+  });
+}
+
+function survolLi(e) {
+  var imgSrc = $(this).attr("data-img");
+  var img = $("<img/>").attr('src','images/'+imgSrc).appendTo(e.data.param);
+}
+
+function viderAside(e) {
+  e.data.param.empty();
 }
